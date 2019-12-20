@@ -13,8 +13,11 @@ const tutorials = [
 
 const titleCased = () => {
   return tutorials.map(str => {
+    // do this to each thing in the array
     return str.split(" ").map(titleCase).join(" ")
-
+    // split each string in an array words, do titlecase to each word in the array
+        // title case splits each word in the array into an array of letters and capitalizes the first letter at position 0 index
+        // then joins the word together then the whole array of words is joined back into a string.
   })
 }
 
